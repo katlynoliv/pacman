@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canvas</title>
+</head>
+<body>
+<canvas id = "meuCanvas" width="600" height="450"
+style="border: solid black;">
+Seu navegador não suporta a tag canvas!
+</canvas>
+<script>
+var c = document.getElementById("meuCanvas");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.rect(0,0,600,450);
+ctx.fillStyle="black"
+ctx.fill();
+
+/*pacman*/
+/*circuferencia*/
+ctx.beginPath();
+ctx.fillStyle = "yellow";
+ctx.strokeStyle = "yellow";
+ctx.arc(165,180,15,0.2*Math.PI,1.8*Math.PI);
+ctx.lineTo(165,180);
+ctx.fill();
+ctx.stroke();
+
+/*pacmanzinho1*/
+ctx.beginPath();
+ctx.fillStyle= "yellow";
+ctx.strokeStyle = "yellow";
+ctx.arc(290,323,4,0.2*Math.PI,1.8*Math.PI);
+ctx.lineTo(290,323);
+ctx.fill();
+ctx.stroke();
+
+/*pacmanzinho2*/
+ctx.beginPath();
+ctx.fillStyle= "yellow";
+ctx.strokeStyle = "yellow";
+ctx.arc(305,323,4,0.2*Math.PI,1.8*Math.PI);
+ctx.lineTo(305,323);
+ctx.fill();
+ctx.stroke();
+
+/*pacmanzinho3*/
+ctx.beginPath();
+ctx.fillStyle= "yellow";
+ctx.strokeStyle = "yellow";
+ctx.arc(320,323,4,0.2*Math.PI,1.8*Math.PI);
+ctx.lineTo(320,323);
+ctx.fill();
+ctx.stroke();
+
+/*linha de cima*/
+ctx.beginPath();
+ctx.strokeStyle= "blue";
+ctx.moveTo(10,10);
+ctx.lineTo(590,10);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+/*linha de baixo*/
+ctx.beginPath();
+ctx.moveTo(10,440);
+ctx.lineTo(590,440);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+/*saidaesquerda1*/
+ctx.beginPath();
+ctx.moveTo(10,10);
+ctx.lineTo(10,200);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(10,200);
+ctx.lineTo(130,200);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(130,200);
+ctx.lineTo(130,220);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(130,220);
+ctx.lineTo(10,220);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+/*saidaesquerda2*/
+ctx.beginPath();
+ctx.moveTo(130,250);
+ctx.lineTo(10,250);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(130,270);
+ctx.lineTo(10,270);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(130,250);
+ctx.lineTo(130,270);
+ctx.lineWidth = 3;
+ctx.stroke()
+
+ctx.beginPath();
+ctx.moveTo(10,440);
+ctx.lineTo(10,270);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+/*saidadireita1*/
+ctx.beginPath();
+ctx.moveTo(590,10);
+ctx.lineTo(590,200);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(590,200);
+ctx.lineTo(480,200);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(480,200);
+ctx.lineTo(480,220);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(590,220);
+ctx.lineTo(480,220);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+/*saidadireita2*/
+ctx.beginPath();
+ctx.moveTo(590,250);
+ctx.lineTo(480,250);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(480,250);
+ctx.lineTo(480,270);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(590,270);
+ctx.lineTo(480,270);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(590,270);
+ctx.lineTo(590,440);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+/*quadrado_esquerdo_cima*/
+ctx.beginPath();
+ctx.rect(60,60,50,16);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.rect(60,140,50,16);
+ctx.stroke();
+
+/*quadrado_direito_cima*/
+ctx.beginPath();
+ctx.rect(490,60,50,16);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.rect(490,140,50,16);
+ctx.stroke();
+
+/*quadrado_esquerdo_baixo*/
+ctx.beginPath();
+ctx.rect(60,315,50,16);
+ctx.stroke();
+
+/*retangulo_esquerdo_baixo*/
+ctx.beginPath();
+ctx.rect(70,390,90,16);
+ctx.stroke();
+
+/*quadrado_direito_baixo*/
+ctx.beginPath();
+ctx.beginPath();
+ctx.rect(490,315,50,16);
+ctx.stroke();
+
+/*retangulo_direito_baixo*/
+ctx.beginPath();
+ctx.rect(445,390,90,16);
+ctx.stroke();
+
+/*retangulo_central_baixo*/
+ctx.beginPath();
+ctx.beginPath();
+ctx.rect(260,315,90,16);
+ctx.stroke();
+
+/*retangulo_em_pe_esquerdo*/
+ctx.beginPath();
+ctx.beginPath();
+ctx.rect(185,250,16,80);
+ctx.stroke();
+
+/*retangulo_em_pe_direito*/
+ctx.beginPath();
+ctx.beginPath();
+ctx.rect(410,250,16,80);
+ctx.stroke();
+
+/*L_cima_esquerdo*/
+ctx.beginPath();
+ctx.moveTo(180,60);
+ctx.lineTo(180,158);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(180,60);
+ctx.lineTo(250,60);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(250,80);
+ctx.lineTo(250,60);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(250,80);
+ctx.lineTo(200,80);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(200,80);
+ctx.lineTo(200,158);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(200,158);
+ctx.lineTo(180,158);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+/*L_cima_direito*/
+ctx.beginPath();
+ctx.moveTo(435,60);
+ctx.lineTo(435,158);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(435,60);
+ctx.lineTo(365,60);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(365,80);
+ctx.lineTo(365,60);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(365,80);
+ctx.lineTo(415,80);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(415,80);
+ctx.lineTo(415,158);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(415,158);
+ctx.lineTo(435,158);
+ctx.lineWidth = 3;
+ctx.stroke();
+
+/*retangulo_central_cima*/
+ctx.beginPath();
+ctx.beginPath();
+ctx.rect(260,115,90,16);
+ctx.stroke();
+
+/*Texto preenchido*/
+ctx.fillStyle= "yellow";
+ctx.font = "bold 30px arial";
+ctx.fillText("PAC - MAN",230,230);
+
+/*fantasminha_rosa*/
+ctx.fillStyle= "pink";
+ctx.beginPath();
+ctx.moveTo(83,116);
+ctx.lineTo(83,102);
+ctx.bezierCurveTo(83,94,89,88,97,88);
+ctx.bezierCurveTo(105,88,111,94,111,102);
+ctx.lineTo(111,116);
+ctx.lineTo(106.333,111.333);
+ctx.lineTo(101.666,116);
+ctx.lineTo(97,111.333);
+ctx.lineTo(92.333,116);
+ctx.lineTo(87.666,111.333);
+ctx.lineTo(83,116);
+ctx.fill();
+
+ctx.fillStyle = "white";
+ctx.beginPath();
+ctx.moveTo(91,96);
+ctx.bezierCurveTo(88,96,87,99,87,101);
+ctx.bezierCurveTo(87,103,88,106,91,106);
+ctx.bezierCurveTo(94,106,95,103,95,101);
+ctx.bezierCurveTo(95,99,94,96,91,96);
+ctx.moveTo(103,96);
+ctx.bezierCurveTo(100,96,99,99,99,101);
+ctx.bezierCurveTo(99,103,100,106,103,106);
+ctx.bezierCurveTo(106,106,107,103,107,101);
+ctx.bezierCurveTo(107,99,106,96,103,96);
+ctx.fill();
+
+ctx.fillStyle = "black";
+ctx.beginPath();
+ctx.arc(101,102,2,0,Math.PI*2,true);
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(89,102,2,0,Math.PI*2,true);
+ctx.fill();
+
+</script>
